@@ -5,34 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>plain</title>
-   
+
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="./assets/css/Login-Form-Clean.css">
-    
+
+
+
+
 </head>
 
 <body>
     <div class="login-clean">
-        <form method="post">
+        <form>
             <h2 class="sr-only">Login Form</h2>
             <img src="./assets/images/logo-main.png" alt="">
-             <div class="form-group">
-                 <span>User ID</span>
-                 <input class="form-control" type="text" name="username" placeholder="user id">
-             </div>
-             <div class="form-group">
-                 <span>Password</span>
-                 <input class="form-control" type="password" name="password"  placeholder="password">
-             </div>
-             <div class="form-group">
-                 <span>Logging in, the user accepts the terms of use located below:</span>
-                 <button  class="btn btn-primary btn-block" >Log In</button>
-             </div><a class="forgot" href="content.html">Need help logging in?</a>
+            <div class="form-group">
+                <span>User ID</span>
+                <input class="form-control" type="text" id="username" name="username" placeholder="user id">
+            </div>
+            <div class="form-group">
+                <span>Password</span>
+                <input class="form-control" name="password" type="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <span>Logging in, the user accepts the terms of use located below:</span>
+                <button onclick="onCheck(document.getElementById('username').value)" id="theButton"
+                    class="btn btn-primary btn-block">Log In</button>
+            </div><a class="forgot" href="content.html">Need help logging in?</a>
         </form>
     </div>
-    <!-- <script src="/public/assets/js/jquery.min.js"></script>
-    <script src="/public/assets/bootstrap/js/bootstrap.min.js"></script> -->
+
+    <script src="login.js"></script>
+
+
+    <!-- <scrip src="/public/assets/js/jquery.min.js"></scrip>
+    <scrip src="/public/assets/bootstrap/js/bootstrap.min.js"></scrip> -->
 </body>
 
 </html>

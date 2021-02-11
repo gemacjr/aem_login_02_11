@@ -38,7 +38,7 @@
                                             <title>user</title>
                                         </svg>
 
-                                        <span class="label truncate pl-2">Hi, Kevin</span>
+                                        <span class="label truncate pl-2" id="username"></span>
                                     </a>
                                     <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="userDropdown">
                                         <a class="dropdown-item" routerLink="/preferences">Update your preferences</a>
@@ -83,12 +83,12 @@
 
 
                 </div>
-                 <div class="header-lg-main">
-                     <img src="assets/static/images/hdr_deliveryclosure_1280@1x.jpg" alt="" style="width:100%;">
-                     <div class="header-main-content">
-                         <div class="title"></div>
-                     </div>
-                 </div>
+                <div class="header-lg-main">
+                    <img src="assets/static/images/hdr_deliveryclosure_1280@1x.jpg" alt="" style="width:100%;">
+                    <div class="header-main-content">
+                        <div class="title"></div>
+                    </div>
+                </div>
 
             </header>
         </div>
@@ -185,6 +185,18 @@
             </div>
         </footer> -->
     </div>
+
+    <script>
+        // Check browser support
+        if (typeof (Storage) !== "undefined") {
+            // Store
+
+            // Retrieve
+            document.getElementById("username").innerHTML = localStorage.getItem("username");
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+    </script>
 
 </body>
 

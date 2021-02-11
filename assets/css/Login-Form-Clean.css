@@ -19,7 +19,7 @@
   text-align: center;
   padding: 0 0 20px;
   font-size: 100px;
-  color: rgb(244,71,107);
+  color: rgb(244, 71, 107);
 }
 
 .login-clean form .form-control {
@@ -45,7 +45,8 @@
   outline: none !important;
 }
 
-.login-clean form .btn-primary:hover, .login-clean .lform .btn-primary:active {
+.login-clean form .btn-primary:hover,
+.login-clean .lform .btn-primary:active {
   background: #eb3b60;
 }
 
@@ -62,28 +63,27 @@
   text-decoration: none;
 }
 
-.forgot a::before{
+.forgot a::before {
   color: #505e6c;
-
 }
 
 span {
   font-size: 13px;
 }
 
-.login-clean form .forgot:hover, .login-clean .lform .forgot:active {
+.login-clean form-1 .forgot:hover,
+.login-clean .lform .forgot:active {
   opacity: 1;
   text-decoration: none;
   color: #505e6c;
 }
 
-
-input::placeholder{
+input::placeholder {
   color: lightblue;
 }
 
 .login-clean img {
-width: 70%;
+  width: 70%;
 
-padding-bottom: 30%;
+  padding-bottom: 30%;
 }
