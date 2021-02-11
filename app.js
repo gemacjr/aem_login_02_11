@@ -9,7 +9,7 @@ router.use(function (req,res,next) {
   next();
 });
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/'));
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
