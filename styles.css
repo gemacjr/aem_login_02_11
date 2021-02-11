@@ -1,0 +1,149 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 0px;
+}
+
+body {
+  margin-top: 0px;
+  background: linear-gradient(to right top, whitesmoke, white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: .50fr .50fr 0.50fr 0.50fr;
+  grid-template-rows: 0.8fr 0.4fr 1.2fr 0.2fr;
+  grid-template-areas:
+    'nav nav nav nav'
+    'sidebar-left main main sidebar-right'
+    'sidebar-left content1 content1 sidebar-right'
+    'footer footer footer footer';
+
+  grid-gap: 0.4rem;
+}
+
+iframe {
+  border: none;
+}
+
+.navigation {
+  /* background: #a7ffeb; */
+
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+main {
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.sidebar-left {
+  grid-area: sidebar-left;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.sidebar-right {
+  grid-area: sidebar-right;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.content1 {
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.content2 {
+  background: #4688b4;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content3 {
+  background: #92afa6;
+  grid-area: content3;
+}
+
+footer {
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  margin-top: 400px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 5rem;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* @media only screen and (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      'nav'
+      'sidebar'
+      'main'
+      'content1'
+      'content2'
+      'content3'
+      'footer';
+  }
+} */
+
+.cart-container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-top: 100px;
+  margin-left: 200px;
+  width: 50%;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+.icon-cart {
+  width: 30px;
+  height: 30px;
+}
+
+.side-img {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 190px;
+}
+
+.content1 {
+  width: 100%;
+  height: 10px;
+  padding: 10px;
+  margin-right: 30%;
+  margin-left: 160px;
+  margin-bottom: 5px;
+}
